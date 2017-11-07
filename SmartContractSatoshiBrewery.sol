@@ -277,11 +277,8 @@ contract PreIco is Ownable, usingOraclize {
     function PreIco(MintableToken _token) {
         token = _token;
         //        TODO: PRODUCTION
-        //        startTime = 1508500800;
-        //        endTime = 1511222399;
-        //      TODO: TEST
-        startTime = now;
-        endTime = now + 1 hours;
+        startTime = 1508500800;
+        endTime = 1511222399;
     }
 
     function setDollar(uint256 _dollarCost) onlyOwner {
@@ -400,32 +397,18 @@ contract ICO is Ownable, usingOraclize {
         preICO = _preIco;
         goal = 7200000;
         //        TODO: PRODUCTION
-        //        startTime = 1508500800;
-        //        secondTime = 1511222399;
-        //        thirdTime = 1511740800;
-        //        fourthTime = 1512086399;
-        //        fifthTime = 1512086400;
-        //        sixthTime = 1512518399;
-        //        seventhTime = 1512518400;
-        //        eighthTime = 1512950399;
-        //        ninthTime = 1512950400;
-        //        tenthTime = 1513382399;
-        //        eleventhTime = 1513382400;
-        //        endTime = 1514419199;
-
-        //      TODO: TEST
-        startTime = now;
-        secondTime = startTime + 1 hours;
-        thirdTime = secondTime + 1 minutes;
-        fourthTime = thirdTime + 1 hours;
-        fifthTime = fourthTime + 1 minutes;
-        sixthTime = fifthTime + 1 hours;
-        seventhTime = sixthTime + 1 minutes;
-        eighthTime = seventhTime + 1 hours;
-        ninthTime = eighthTime + 1 minutes;
-        tenthTime = ninthTime + 1 hours;
-        eleventhTime = tenthTime + 1 minutes;
-        endTime = eleventhTime + 1 hours;
+        startTime = 1508500800;
+        secondTime = 1511222399;
+        thirdTime = 1511740800;
+        fourthTime = 1512086399;
+        fifthTime = 1512086400;
+        sixthTime = 1512518399;
+        seventhTime = 1512518400;
+        eighthTime = 1512950399;
+        ninthTime = 1512950400;
+        tenthTime = 1513382399;
+        eleventhTime = 1513382400;
+        endTime = 1514419199;
     }
 
     function setDollar(uint256 _dollarCost) onlyOwner {
