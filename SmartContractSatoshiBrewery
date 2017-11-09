@@ -209,8 +209,8 @@ contract MintableToken is StandardToken, Ownable {
     }
 
     function MintableToken() {
-        limit = 10000000;
-        limitPreico = 300000;
+        limit = 100000000;
+        limitPreico = 2700000;
     }
 
     function mintPreico(address _to, uint256 _amount) onlyOwner canMint public returns (bool) {
@@ -278,7 +278,7 @@ contract PreIco is Ownable, usingOraclize {
         token = _token;
         //        TODO: PRODUCTION
         startTime = 1508500800;
-        endTime = 1511222399;
+        endTime = 1511308799;
     }
 
     function setDollar(uint256 _dollarCost) onlyOwner {
