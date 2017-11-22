@@ -278,7 +278,7 @@ contract PreIco is Ownable, usingOraclize {
         token = _token;
         //        TODO: PRODUCTION
         startTime = 1508500800;
-        endTime = 1511308799;
+        endTime = 1511827199;
     }
 
     function setDollar(uint256 _dollarCost) onlyOwner {
@@ -395,7 +395,7 @@ contract ICO is Ownable, usingOraclize {
 
         token = _token;
         preICO = _preIco;
-        goal = 7200000;
+        goal = 72000000;
         //        TODO: PRODUCTION
         startTime = 1508500800;
         secondTime = 1511222399;
