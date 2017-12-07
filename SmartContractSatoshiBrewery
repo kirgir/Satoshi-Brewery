@@ -398,17 +398,17 @@ contract ICO is Ownable, usingOraclize {
         goal = 72000000;
         //        TODO: PRODUCTION
         startTime = 1508500800;
-        secondTime = 1511222399;
-        thirdTime = 1511740800;
-        fourthTime = 1512086399;
-        fifthTime = 1512086400;
-        sixthTime = 1512518399;
-        seventhTime = 1512518400;
-        eighthTime = 1512950399;
-        ninthTime = 1512950400;
-        tenthTime = 1513382399;
-        eleventhTime = 1513382400;
-        endTime = 1514419199;
+        secondTime = 1511827199;
+        thirdTime = 1513098000;
+        fourthTime = 1513187999;
+        fifthTime = 1513188000;
+        sixthTime = 1513274399;
+        seventhTime = 1513274400;
+        eighthTime = 1513447199;
+        ninthTime = 1513447200;
+        tenthTime = 1513792799;
+        eleventhTime = 1513792800;
+        endTime = 1514397600;
     }
 
     function setDollar(uint256 _dollarCost) onlyOwner {
@@ -525,6 +525,6 @@ contract ICO is Ownable, usingOraclize {
     }
 
     function goalReached() public constant returns (bool) {
-        return weiRaised >= dollarCost.mul(goal).mul(75).div(100);
+        return weiRaised >= dollarCost.mul(goal).mul(40).div(100);
     }
 }
