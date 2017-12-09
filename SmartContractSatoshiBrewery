@@ -505,7 +505,7 @@ contract ICO is Ownable, usingOraclize {
     function forwardFunds(uint256 amount) onlyOwner {
         require(amount > 0);
         require(hasEnded());
-        require(hasFunded());
+        require(goalReached());
         require(this.balance - amount >= 0);
 
         owner.transfer(amount);
