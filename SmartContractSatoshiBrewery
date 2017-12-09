@@ -399,7 +399,7 @@ contract ICO is Ownable, usingOraclize {
         //        TODO: PRODUCTION
         startTime = 1508500800;
         secondTime = 1511827199;
-        thirdTime = 1513098000;
+        thirdTime = 1512972000;
         fourthTime = 1513187999;
         fifthTime = 1513188000;
         sixthTime = 1513274399;
